@@ -10,10 +10,14 @@ import java.util.List;
 @Service
 public class WorkerService {
 
-    @Autowired
-    private WorkerRespository workerRespository;
+	@Autowired
+	private WorkerRespository workerRespository;
 
-    public List<Worker> findAll() {
-        return workerRespository.findAll();
-    }
+	public List<Worker> findAll() {
+		return workerRespository.findAll();
+	}
+
+	public Worker findById(Long id) {
+		return workerRespository.getById(id);
+	}
 }
