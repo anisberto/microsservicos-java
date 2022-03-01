@@ -24,6 +24,6 @@ public class WorkerResource {
 
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Worker> findById(@PathVariable int id) {
-		return ResponseEntity.ok(workerService.findAll().get(id - 1));
+		return ResponseEntity.ok(workerService.findAll().get(id));
 	}
 }
