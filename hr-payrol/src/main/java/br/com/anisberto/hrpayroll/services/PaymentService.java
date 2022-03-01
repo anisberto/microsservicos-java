@@ -26,7 +26,7 @@ public class PaymentService {
 		Worker worker = restTemplate.getForObject(workerHost + "/worker/{id}", Worker.class, uriVariable);
 		return Payment.builder()
 				.name(worker.getName())
-				.dailyIncome(worker.getDailyIcome())
+				.dailyIncome(worker.getDailyIncome())
 				.days(days)
 				.build();
 	}

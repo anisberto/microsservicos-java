@@ -1,7 +1,5 @@
 package br.com.anisberto.hrpayroll.resources;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +11,7 @@ import br.com.anisberto.hrpayroll.entities.Payment;
 import br.com.anisberto.hrpayroll.services.PaymentService;
 
 @RestController
-@RequestMapping(value = "payments")
+@RequestMapping(value = "/payments")
 public class PaymentResource {
 	@Autowired
 	private PaymentService paymentService;

@@ -11,6 +11,6 @@ public class Worker {
 
 	private Long id;
 	private String name;
-	private Double dailyIcome;
+	private Double dailyIncome;
 
 }
