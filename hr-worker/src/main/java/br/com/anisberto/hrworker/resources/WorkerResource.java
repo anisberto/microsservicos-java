@@ -23,7 +23,7 @@ public class WorkerResource {
 	}
 
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<Worker> findById(@PathVariable int id) {
-		return ResponseEntity.ok(workerService.findAll().get(id));
+	public ResponseEntity<Worker> findById(@PathVariable Long id) {
+		return ResponseEntity.ok(workerService.findById(id).get());
 	}
 }
